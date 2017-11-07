@@ -1,0 +1,7 @@
+{
+  "name": "Gari Bot for Discord By OTSB",
+  "description": "A simple bot to clear/delete all messages of a Discord channel ",
+  "repository": "https://github.com/FabioLucenaRibas/Gari-Discord-Bot-OTSB",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["discord", "delete", "clear"]
+}

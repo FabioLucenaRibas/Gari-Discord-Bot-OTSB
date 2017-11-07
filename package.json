@@ -1,0 +1,25 @@
+{
+  "name": "Gari-Discord-Bot-OTSB",
+  "version": "1.0.0",
+  "description": "A simple bot to clear/delete all messages of a Discord channel",
+  "engines": {
+    "node": "6.7.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabioLucenaRibas/Gari-Discord-Bot-OTSB"
+  },
+  "keywords": [
+    "discord",
+    "delete",
+    "clear"
+  ],
+  "license": "MIT"
+}
