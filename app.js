@@ -13,7 +13,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 // Token of my bot
-const token = 'MzcxNDYyOTE1MzU1NTc0Mjcy.DM2FIQ.vkeFHKtqRBtk7hs4Y8mUFfxqOWE';
+const token = 'Vbpj8-XxnKfOOZCm3W81QCKtX8mVskgz';
 
 bot.on('ready', () => {
   console.log('O gari esta pronto!');
