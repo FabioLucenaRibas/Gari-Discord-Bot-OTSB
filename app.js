@@ -13,7 +13,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 // Token of my bot
-const token = 'Vbpj8-XxnKfOOZCm3W81QCKtX8mVskgz';
+const token = 'TOKEN HERE';
 
 bot.on('ready', () => {
   console.log('O gari esta pronto!');
@@ -26,11 +26,11 @@ bot.on('ready', () => {
       //    1. Check if the user has enough permissions
       //    2. Check if I have the permission to execute the command
 
-      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
+      if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {
         message.channel.sendMessage("Desculpe, você não tenho permissão para executar o comando \""+message.content+"\"");
         console.log("Desculpe, você não tenho permissão para executar o comando \""+message.content+"\"");
         return;
-      } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
+      } else if (!message.channel.permissionsFor(bot.user).has("MANAGE_MESSAGES")) {
         message.channel.sendMessage("Desculpe, não tenho permissão para executar o comando \""+message.content+"\"");
         console.log("Desculpe, não tenho permissão para executar o comando \""+message.content+"\"");
         return;
@@ -45,7 +45,7 @@ bot.on('ready', () => {
             messagesDeleted = messages.array().length; // number of messages deleted
 
             // Logging the number of messages deleted on both the channel and console.
-            message.channel.sendMessage("Mensagens excluidas com sucesso. Total de mensagens excluidas: "+messagesDeleted);
+            message.channel.send("Mensagens excluidas com sucesso. Total de mensagens excluidas: "+messagesDeleted);
             console.log('Mensagens excluidas com sucesso. Total de mensagens excluidas: '+messagesDeleted)
           })
           .catch(err => {
@@ -56,7 +56,7 @@ bot.on('ready', () => {
     }
 
 	if (message.content == HELP) {
-		message.channel.sendMessage("* Para excluir as mensagens digite o seguinte comando: !gari-otsb");
+		message.channel.send("* Para excluir as mensagens digite o seguinte comando: !gari-otsb");
 		console.log("* Para excluir as mensagens digite o seguinte comando: !gari-otsb");
 	}
 
